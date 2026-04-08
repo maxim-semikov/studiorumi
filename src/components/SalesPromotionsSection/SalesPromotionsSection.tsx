@@ -24,7 +24,7 @@ export const SalesPromotionsSection = () => (
     <Section id={NAV_LINKS_SECTIONS_IDS.SALES_PROMOTIONS} className={'pb-10'}>
         <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Акции</h2>
         <div className={'px-6'}>
-            <Carousel slides={slides} slideClassName={'basis-full md:basis-1/2'}/>
+            <Carousel slides={slides} slidesPerView={2}/>
         </div>
     </Section>
 )

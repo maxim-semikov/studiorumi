@@ -6,10 +6,10 @@ import type {EmblaOptionsType} from 'embla-carousel'
 type CarouselProps = {
     slides: React.ReactNode[]
     options?: EmblaOptionsType
-    slideClassName?: string
+    slidesPerView?: 'auto' | number
 }
 
-export const Carousel = ({slides, options, slideClassName = 'basis-full'}: CarouselProps) => {
+export const Carousel = ({slides, options, slidesPerView = 1}: CarouselProps) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({loop: false, align: 'start', ...options})
 
     const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi])
@@ -18,9 +18,17 @@ export const Carousel = ({slides, options, slideClassName = 'basis-full'}: Carou
     return (
         <div className={'relative'}>
             <div className={'overflow-hidden'} ref={emblaRef}>
-                <div className={'-ml-4 flex'}>
+                <div className={'flex gap-6 touch-pan-y'}>
                     {slides.map((slide, index) => (
-                        <div key={index} className={`min-w-0 shrink-0 grow-0 pl-4 ${slideClassName}`}>
+                        <div
+                            key={index}
+                            className={'shrink-0'}
+                            style={{
+                                flexBasis: slidesPerView === 'auto'
+                                    ? 'auto'
+                                    : `calc((100% - ${(+slidesPerView - 1) * 1.5}rem) / ${slidesPerView})`
+                            }}
+                        >
                             {slide}
                         </div>
                     ))}
@@ -29,14 +37,14 @@ export const Carousel = ({slides, options, slideClassName = 'basis-full'}: Carou
 
             <button
                 onClick={scrollPrev}
-                className={'absolute -left-5 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 text-2xl rounded-full bg-rumi-light text-white hover:bg-rumi z-10'}
+                className={'absolute -left-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-rumi-light text-white hover:bg-rumi disabled:opacity-30 z-10'}
                 aria-label="Назад"
             >
                 ‹
             </button>
             <button
                 onClick={scrollNext}
-                className={'absolute -right-5 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 text-2xl rounded-full bg-rumi-light text-white hover:bg-rumi z-10'}
+                className={'absolute -right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-rumi-light text-white hover:bg-rumi disabled:opacity-30 z-10'}
                 aria-label="Вперёд"
             >
                 ›
