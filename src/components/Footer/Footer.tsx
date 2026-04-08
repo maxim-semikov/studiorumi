@@ -3,7 +3,7 @@ import Link from "@/components/Link";
 import SocialIcon from "@/components/icons";
 import {headerNavLinks} from "@/data/headerNavLinks";
 import {siteMetadata} from "@/data/siteMetadata";
-import siteLogo from '/public/assets/images/rumi-logo.webp'
+import siteLogo from '../../../public/assets/images/rumi-logo.webp'
 export const Footer = () => {
     return (
         <footer className={'py-10'}>

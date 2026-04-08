@@ -13,10 +13,10 @@ import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
 import {ServicesSection} from "@/components/ServicesSection/ServicesSection";
-import siteLogo from '/public/assets/images/rumi-logo.webp'
-import headerMainPhoto from '/public/assets/images/main_banner_photo.webp'
-import catImg from '/public/assets/images/cat.webp'
-import dogImg from '/public/assets/images/dog.webp'
+import siteLogo from '../../public/assets/images/rumi-logo.webp'
+import headerMainPhoto from '../../public/assets/images/main_banner_photo.webp'
+import catImg from '../../public/assets/images/cat.webp'
+import dogImg from '../../public/assets/images/dog.webp'
 import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
 import {Section} from "@/components/Section/Section";
 
