@@ -8,14 +8,7 @@ const MobileNav = () => {
     const [navShow, setNavShow] = useState(false)
 
     const onToggleNav = () => {
-        setNavShow((status) => {
-            if (status) {
-                document.body.style.overflow = 'auto'
-            } else {
-                document.body.style.overflow = 'hidden'
-            }
-            return !status
-        })
+        setNavShow(status => !status)
     }
 
     return (
@@ -25,7 +18,7 @@ const MobileNav = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="h-14 w-14 text-rumi-light "
+                    className="h-14 w-14 text-rumi-light"
                 >
                     <path
                         fillRule="evenodd"
@@ -34,8 +27,9 @@ const MobileNav = () => {
                     />
                 </svg>
             </button>
+
             <div
-                className={`fixed left-0 top-0 z-10 h-full w-full bg-rumi opacity-95 transition-transform duration-300 ease-in-out ${
+                className={`fixed inset-0 z-50 h-screen w-full bg-rumi transition-transform duration-300 ease-in-out ${
                     navShow ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
@@ -55,12 +49,13 @@ const MobileNav = () => {
                         </svg>
                     </button>
                 </div>
-                <nav className="fixed mt-8 h-full">
+
+                <nav className="mt-8">
                     {headerNavLinks.map((link) => (
                         <div key={link.title} className="px-12 py-4">
                             <Link
                                 href={link.href}
-                                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 uppercase"
+                                className="text-2xl font-bold tracking-widest text-white uppercase"
                                 onClick={onToggleNav}
                             >
                                 {link.title}

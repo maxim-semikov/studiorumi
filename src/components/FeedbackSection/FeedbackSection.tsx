@@ -24,7 +24,7 @@ export const FeedbackSection = () => (
     <Section id={NAV_LINKS_SECTIONS_IDS.FEEDBACKS} className={'pb-10'}>
         <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Отзывы</h2>
         <div className={'px-6'}>
-            <Carousel slides={slides} slidesPerView={3}/>
+            <Carousel slides={slides} slideClassName={'basis-full md:basis-1/2 lg:basis-1/3'}/>
         </div>
     </Section>
 )
