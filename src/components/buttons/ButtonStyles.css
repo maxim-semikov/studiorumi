@@ -1,5 +1,3 @@
-@reference "../../app/globals.css";
-
 .button {
     @apply flex justify-center items-center flex-grow text-2xl text-rumi-light uppercase text-center border-2 border-rumi-light rounded-full bg-bgColor h-14 px-4
 }
