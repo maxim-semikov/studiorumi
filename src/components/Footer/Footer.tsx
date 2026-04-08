@@ -16,7 +16,7 @@ export const Footer = () => {
                     <div className={'flex justify-center gap-2 mb-10 md:mb-0'}>
                         <SocialIcon kind={'telegram'} href={siteMetadata.telegram} className={'w-10 h-10'}/>
                         <SocialIcon kind={'vk'} href={siteMetadata.vk} className={'w-10 h-10'}/>
-                        <SocialIcon kind={'whatsApp'} href={siteMetadata.whatsApp} className={'w-10 h-10'}/>
+                        <SocialIcon kind={'max'} href={siteMetadata.max} className={'w-10 h-10'}/>
                     </div>
                 </div>
 

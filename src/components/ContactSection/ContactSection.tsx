@@ -26,6 +26,13 @@ export const ContactSection = () => (
                         <a href={`tel:${tel}`} key={tel} className={'block font-light text-xl'}>{tel}</a>
                     ))}
                 </div>
+
+                <div className={'border-2 border-rumi-light rounded-xl px-4 py-3'}>
+                    <p className={`${elMessiri.className} text-rumi text-xl font-medium mb-1`}>
+                        ★ Награда «Хорошее место»
+                    </p>
+                    <p className={'text-lg font-light'}>по версии Яндекс Карт: 2023 · 2025 · 2026</p>
+                </div>
             </div>
 
             <div className={'h-[500px] rounded-xl border-2 border-rumi-light grow overflow-hidden'}>
