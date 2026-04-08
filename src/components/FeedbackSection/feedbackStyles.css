@@ -1,14 +1,1 @@
-
-#feedbacks .slick-track {
-    display: flex;
-}
-
-#feedbacks .slick-slide {
-    align-self: stretch;
-    height: auto;
-}
-
-#feedbacks .slick-slide > div {
-    height: 100%;
-}
-
+/* feedback styles */

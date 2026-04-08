@@ -1,3 +1,5 @@
+@reference "../../app/globals.css";
+
 .header-container{
     @apply mr-10 flex items-center justify-end py-4 md:mr-auto md:container md:justify-center;
 }

@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import { siteMetadata } from "@/data/siteMetadata";
 import {rubik} from "@/app/fonts";

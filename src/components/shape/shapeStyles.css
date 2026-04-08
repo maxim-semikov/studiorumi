@@ -1,3 +1,5 @@
+@reference "../../app/globals.css";
+
 
 .round-out {
     @apply shrink-0 w-[150px] relative

@@ -1,46 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {}
+@theme {
+  --color-rumi: #3A5700;
+  --color-rumi-light: #76AC00;
+  --color-bgColor: #FDFDFD;
 
-@media (prefers-color-scheme: dark) {
-  :root {}
+  --background-image-circles: url('/assets/images/bg-circles.jpg');
+  --background-image-light-circles: url('/assets/images/light-circles.svg');
+  --background-image-sales-card: url('/assets/images/bg-sales-card.svg');
+
+  --font-family-sans: var(--font-rubik), var(--font-elMessiri), ui-sans-serif, system-ui, sans-serif;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+  max-width: 1280px;
 }
 
 body {
   color: #3A5700;
   background-color: #FDFDFD;
-  @apply bg-circles bg-scroll;
-}
-
-.slick-prev, .slick-next {
-  height: 31px;
-  width: 31px;
-}
-
-.slick-prev {
-  left: -34px;
-}
-
-.slick-next {
-  right: -34px;
-}
-
-.slick-prev:before, .slick-next:before {
-  font-size: 34px;
-  color: #76AC00;
-}
-
-.slick-dots {
-  bottom: -35px;
-}
-
-.slick-dots li button:before {
-  color: #76AC00;
-  font-size: 14px;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #3A5700;
+  background-image: var(--background-image-circles);
+  background-attachment: scroll;
 }
