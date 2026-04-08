@@ -62,8 +62,8 @@ export default function Home() {
                                   />
                                   <SocialIcon
                                       className={'w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11'}
-                                      kind={'whatsApp'}
-                                      href={siteMetadata.telegram}
+                                      kind={'max'}
+                                      href={siteMetadata.max}
                                   />
                               </div>
                           </div>
@@ -101,7 +101,7 @@ export default function Home() {
                       <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>запишите
                           своего друга прямо сейчас</p>
                       <div className={'flex justify-center items-center mt-6'}>
-                          <a href={siteMetadata.whatsApp} target={'_blank'}
+                          <a href={siteMetadata.max} target={'_blank'}
                              className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl hover:bg-amber-400 hover:text-white`}>Записаться</a>
                       </div>
                   </>
@@ -126,7 +126,7 @@ export default function Home() {
                               <p className={`${elMessiri.className} text-2xl font-light text-center leading-relaxed tracking-wider`}>Наша
                                   команда свяжется с вами и проконсультирует</p>
                               <div className={'flex justify-center items-center mt-6'}>
-                                  <a href={siteMetadata.whatsApp} target={'_blank'}
+                                  <a href={siteMetadata.max} target={'_blank'}
                                      className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl hover:bg-amber-400 hover:text-white`}>Отправить</a>
                               </div>
                           </div>

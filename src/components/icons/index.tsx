@@ -2,12 +2,14 @@ import {
     WhatsApp,
     Telegram,
     vKontakte,
+    MaxMessenger,
 } from './icons'
 
 const components = {
     whatsApp: WhatsApp,
     telegram: Telegram,
     vk: vKontakte,
+    max: MaxMessenger,
 }
 
 type SocialIconProps = {

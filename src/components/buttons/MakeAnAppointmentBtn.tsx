@@ -1,7 +1,7 @@
 import {siteMetadata} from "@/data/siteMetadata";
 
 export const MakeAnAppointmentBtn = () => (
-    <a href={siteMetadata.whatsApp} target={'_blank'}
+    <a href={siteMetadata.max} target={'_blank'}
         className={'group size-[250px] md:size-[300px] border border-rumi-light rounded-full' +
             ' flex justify-center items-center cursor-pointer hover:border-4'}
     >
