@@ -13,7 +13,7 @@ import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
 import {ServicesSection} from "@/components/ServicesSection/ServicesSection";
-import siteLogo from '/public/assets/images/rumi-logo.webp'
+import siteLogo from '/public/assets/images/rumi-logo-new.webp'
 import headerMainPhoto from '/public/assets/images/main_banner_photo.webp'
 import catImg from '/public/assets/images/cat.webp'
 import dogImg from '/public/assets/images/dog.webp'
@@ -33,6 +33,8 @@ export default function Home() {
 
                       <div className={'flex flex-col'}>
                           <Image src={siteLogo} alt={'Rumi logo'}
+                                 width={155}
+                                 height={136}
                                  className={'self-center mb-20 md:mb-10'}/>
 
                           <h2 className={`${elMessiri.className} text-6xl uppercase mb-10 text-center lg:text-left tracking-wider`}>Бережная
