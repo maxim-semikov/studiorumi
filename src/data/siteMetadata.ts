@@ -7,8 +7,8 @@ export const siteMetadata = {
     theme: 'light',
     siteUrl: 'https://studiorumi.vercel.app/',
     siteRepo: 'https://github.com/maxim-semikov/studiorumi.git',
-    siteLogo: '/assets/images/rumi-logo.webp',
-    socialBanner: '/static/assets/images/rumi-logo.webp',
+    siteLogo: '/assets/images/rumi-logo-new.webp',
+    socialBanner: '/static/assets/images/rumi-logo-new.webp',
     email: 'address@yoursite.com',
     language: 'ru',
     locale: 'ru-RU',
@@ -22,5 +22,3 @@ export const siteMetadata = {
         name: 'Московская область, г. Фрязино, ул. Мира, 29'
     }
 }
-
-
